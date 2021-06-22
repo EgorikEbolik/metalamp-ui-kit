@@ -1,0 +1,30 @@
+@import "components/text_field/text_field";
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat Regular 400.eot');
+	src: local('☺'), url('fonts/Montserrat Regular 400.woff') format('woff'), url('fonts/Montserrat Regular 400.ttf') format('truetype'), url('fonts/Montserrat Regular 400.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat Bold 700.eot');
+	src: local('☺'), url('fonts/Montserrat Bold 700.woff') format('woff'), url('fonts/Montserrat Bold 700.ttf') format('truetype'), url('fonts/Montserrat Bold 700.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  width: 1440px;
+  height: 1853px;
+  margin: 0 auto ;
+  .elements {
+    margin-top: 163px;
+  }
+}
+

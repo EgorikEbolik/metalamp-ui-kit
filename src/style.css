@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.text-field {
+  width: 320px;
+  height: 67px;
+}
+
+.text-field__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #1f2041;
+}
+
+.text-field input {
+  margin-top: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  outline: none;
+  padding: 15px 265px 13px 13px;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat Regular 400.eot");
+  src: local("☺"), url("fonts/Montserrat Regular 400.woff") format("woff"), url("fonts/Montserrat Regular 400.ttf") format("truetype"), url("fonts/Montserrat Regular 400.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat Bold 700.eot");
+  src: local("☺"), url("fonts/Montserrat Bold 700.woff") format("woff"), url("fonts/Montserrat Bold 700.ttf") format("truetype"), url("fonts/Montserrat Bold 700.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  width: 1440px;
+  height: 1853px;
+  margin: 0 auto;
+}
+
+body .elements {
+  margin-top: 163px;
+}

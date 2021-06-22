@@ -1,0 +1,18 @@
+@import "../_variables";
+@import "../_mixins";
+
+.text-field{
+  width: 320px;
+  height: 67px;
+  &__title {
+    @include h3;
+  }
+  input {
+    margin-top: 4px;
+    border: 1px solid $Dark25;
+    border-radius: 4px;
+    outline: none;
+    padding: 15px 265px 13px 13px;
+
+  }
+}
