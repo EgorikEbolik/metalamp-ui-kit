@@ -1,18 +1,46 @@
-@import "../_variables";
-@import "../_mixins";
-
-.text-field{
+.field {
   width: 320px;
   height: 67px;
+  margin-bottom: 20px;
+
   &__title {
     @include h3;
   }
-  input {
+
+  &__area {
     margin-top: 4px;
     border: 1px solid $Dark25;
     border-radius: 4px;
-    outline: none;
-    padding: 15px 265px 13px 13px;
+    padding: 13px 0 13px 15px;
+    transition: border-color .3s ease, color .3s ease;
 
+    &:hover,
+    &:focus-within {
+      border-color: $Dark50;
+    }
+
+    &:hover>&__input {
+      color: $Dark75;
+    }
+
+    &:focus-within>&__input {
+      color: $Dark75;
+    }
+
+    &__input {
+      @include body-text;
+      border: none;
+      outline: none;
+      line-height: 18px;
+      color: $Dark25;
+      width: 80%;
+      padding: 0;
+      transition: color .3s ease;
+
+      &::placeholder {
+        color: $Dark25;
+      }
+
+    }
   }
 }

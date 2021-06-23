@@ -1,0 +1,108 @@
+.dropdown-area {
+  position: relative;
+  padding: 0;
+  width: 267px;
+  border-radius: 2px 2px 0 0;
+
+  &:hover &__list{
+    border-color: $Dark50;
+  }
+
+  &__text {
+    color: $Dark75;
+    padding: 13px 0 13px 15px;
+    cursor: pointer;
+
+  }
+
+  &__check {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    right: 0;
+    top: 0;
+    background-image: url(/src/img/expand_more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+  }
+
+  &__list {
+    list-style: none;
+    padding: 15px 15px;
+    border-top: 1px solid $Dark25;
+    margin: 0;
+    transition: border-color .3s ease;
+
+    &__item {
+      @include h3;
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      &:first-child {
+        margin-top: 13px;
+      }
+
+      &__counter {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 92px;
+
+        &__value {
+          align-self: center;
+          text-align: center;
+          margin: 0 10px;
+          width: 15px;
+        }
+
+        &__plus-button,
+        &__minus-button {
+          height: 30px;
+          width: 30px;
+          border: 1px solid $Dark50;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+
+        }
+
+        &__plus-button {
+
+          &::before,
+          &::after {
+            content: '';
+            height: 7px;
+            width: 1px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            background-color: $Dark25;
+          }
+
+          &::before {
+            transform: rotate(90deg);
+          }
+        }
+
+        &__minus-button {
+
+          &::after {
+            content: '';
+            height: 7px;
+            width: 1px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            background-color: $Dark25;
+            transform: rotate(90deg);
+          }
+        }
+
+      }
+    }
+  }
+}

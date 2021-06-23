@@ -1,27 +1,4 @@
 @charset "UTF-8";
-.text-field {
-  width: 320px;
-  height: 67px;
-}
-
-.text-field__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #1f2041;
-}
-
-.text-field input {
-  margin-top: 4px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  outline: none;
-  padding: 15px 265px 13px 13px;
-}
-
 @font-face {
   font-family: 'Montserrat';
   src: url("./fonts/Montserrat Regular 400.eot");
@@ -38,6 +15,192 @@
   font-style: normal;
 }
 
+.field {
+  width: 320px;
+  height: 67px;
+  margin-bottom: 20px;
+}
+
+.field__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #1f2041;
+}
+
+.field__area {
+  margin-top: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding: 13px 0 13px 15px;
+  -webkit-transition: border-color .3s ease, color .3s ease;
+  transition: border-color .3s ease, color .3s ease;
+}
+
+.field__area:hover, .field__area:focus-within {
+  border-color: rgba(31, 32, 65, 0.5);
+}
+
+.field__area:hover > .field__area__input {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.field__area:focus-within > .field__area__input {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.field__area__input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  border: none;
+  outline: none;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 80%;
+  padding: 0;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.field__area__input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.field__area__input:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.field__area__input::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.field__area__input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-area {
+  position: relative;
+  padding: 0;
+  width: 267px;
+  border-radius: 2px 2px 0 0;
+}
+
+.dropdown-area:hover .dropdown-area__list {
+  border-color: rgba(31, 32, 65, 0.5);
+}
+
+.dropdown-area__text {
+  color: rgba(31, 32, 65, 0.75);
+  padding: 13px 0 13px 15px;
+  cursor: pointer;
+}
+
+.dropdown-area__check {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  right: 0;
+  top: 0;
+  background-image: url(/src/img/expand_more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.dropdown-area__list {
+  list-style: none;
+  padding: 15px 15px;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+  margin: 0;
+  -webkit-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+}
+
+.dropdown-area__list__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #1f2041;
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown-area__list__item:first-child {
+  margin-top: 13px;
+}
+
+.dropdown-area__list__item__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-preferred-size: 92px;
+      flex-basis: 92px;
+}
+
+.dropdown-area__list__item__counter__value {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin: 0 10px;
+  width: 15px;
+}
+
+.dropdown-area__list__item__counter__plus-button, .dropdown-area__list__item__counter__minus-button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-area__list__item__counter__plus-button::before, .dropdown-area__list__item__counter__plus-button::after {
+  content: '';
+  height: 7px;
+  width: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-area__list__item__counter__plus-button::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.dropdown-area__list__item__counter__minus-button::after {
+  content: '';
+  height: 7px;
+  width: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: rgba(31, 32, 65, 0.25);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 body {
   background-color: #fff;
   font-family: "Montserrat";
@@ -47,6 +210,17 @@ body {
   margin: 0 auto;
 }
 
-body .elements {
+.d-none {
+  display: none;
+}
+
+.elements {
   margin-top: 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

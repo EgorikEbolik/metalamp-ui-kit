@@ -6,10 +6,43 @@
   </head>
   <body>
     <div class="elements"> 
-      <div class="text-field">
-        <div class="text-field__title">text field</div>
-        <input class="text-field__input" type="email" placeholder="Email">
+      <div class="field">
+        <div class="field__title">Text field</div>
+        <div class="field__area">
+          <input class="field__area__input" type="email" placeholder="Email">
+        </div>
       </div>
+      <div class="field">
+        <div class="field__title">some dropdown</div>
+        <div class="field__area dropdown-area">
+          <div class="dropdown-area__text">Some Text</div>
+          <div class="dropdown-area__check"></div>
+          <ul class="dropdown-area__list">
+                  <li class="dropdown-area__list__item">спальни
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">2</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+                  <li class="dropdown-area__list__item">кровати
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">2</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+                  <li class="dropdown-area__list__item">ванные комнаты
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">1</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+          </ul>
+        </div>
+      </div>
+      <script src="components/text_field_dropdown/show_dropdown.js"></script>
     </div>
   </body>
 </html>
