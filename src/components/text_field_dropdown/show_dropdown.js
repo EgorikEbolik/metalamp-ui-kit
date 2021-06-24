@@ -3,8 +3,12 @@ list = document.querySelector(".dropdown-area__list");
 items = list.querySelectorAll(".dropdown-area__list__item")
 
 
-area.onclick = () => {
-  list.classList.toggle("d-none");
+area.onclick = (event) => {
+  let target = event.target;
+  if (target.className = "dropdown-area__text") {
+    list.classList.toggle("d-none");
+  }
+
 }
 
 function changeValue() {
@@ -21,17 +25,17 @@ function changeValue() {
     };
 
     elementMinusButton.onclick = () => {
-      if(elementValue >= 1) {
+      if (elementValue >= 1) {
         elementValue -= 1;
         elementString.innerHTML = String(elementValue);
       }
-      
+
     };
 
-    
 
 
-    
+
+
   }
 }
 

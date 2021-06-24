@@ -1,0 +1,17 @@
+mixin item(name)
+  li.dropdown-area__checkbox-list__item
+    div.dropdown-area__checkbox-list__item__before
+      input(type="checkbox").dropdown-area__checkbox-list__item__checkbox
+    span.dropdown-area__checkbox-list__item__name= name
+
+
+.field.dropdown.p-rel
+  .field__title.dropdown__title checkbox list
+  .check.only-title__check.only-title__check__transform
+  ul.dropdown-area__list.dropdown-area__checkbox-list.dropdown-area__checkbox-list__transform
+    +item("Завтрак")
+    +item("Письменный стол")
+    +item("Стул для кормления")
+    +item("Кроватка")
+    +item("Телевизор")
+    +item("Шампунь")

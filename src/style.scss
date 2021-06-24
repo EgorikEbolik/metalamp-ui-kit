@@ -19,6 +19,7 @@
 @import "components/_mixins";
 @import "components/text_field/text_field";
 @import "components/text_field_dropdown/text_field_dropdown";
+@import "components/checkbox_list/checkbox_list";
 
 body {
   background-color: #fff;
@@ -31,7 +32,11 @@ body {
 
 
 .d-none{
-  display:none
+  display:none;
+}
+
+.v-hidden {
+  visibility: hidden;
 }
 
 .elements {

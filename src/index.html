@@ -12,11 +12,11 @@
           <input class="field__area__input" type="email" placeholder="Email">
         </div>
       </div>
-      <div class="field">
+      <div class="field dropdown">
         <div class="field__title">some dropdown</div>
         <div class="field__area dropdown-area">
           <div class="dropdown-area__text">Some Text</div>
-          <div class="dropdown-area__check"></div>
+          <div class="check"></div>
           <ul class="dropdown-area__list">
                   <li class="dropdown-area__list__item">спальни
                     <div class="dropdown-area__list__item__counter">
@@ -42,7 +42,44 @@
           </ul>
         </div>
       </div>
+      <div class="field dropdown p-rel">
+        <div class="field__title dropdown__title">checkbox list</div>
+        <div class="check only-title__check only-title__check__transform"></div>
+        <ul class="dropdown-area__list dropdown-area__checkbox-list dropdown-area__checkbox-list__transform">
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Завтрак</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Письменный стол</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Стул для кормления</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Кроватка</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Телевизор</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Шампунь</span>
+                </li>
+        </ul>
+      </div>
       <script src="components/text_field_dropdown/show_dropdown.js"></script>
+      <script src="components/checkbox_list/checkbox_list.js"></script>
     </div>
   </body>
 </html>
