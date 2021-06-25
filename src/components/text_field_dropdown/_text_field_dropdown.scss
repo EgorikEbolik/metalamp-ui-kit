@@ -23,10 +23,8 @@
 
 
     &__list {
-      list-style: none;
       padding: 15px 15px;
       border-top: 1px solid $Dark25;
-      margin: 0;
       transition: border-color .3s ease;
 
       &__item {

@@ -15,19 +15,10 @@
 	font-style: normal;
 }
 
-@import "components/_variables.scss";
-@import "components/_mixins";
-@import "components/text_field/text_field";
-@import "components/text_field_dropdown/text_field_dropdown";
-@import "components/checkbox_list/checkbox_list";
-
-body {
-  background-color: #fff;
-  font-family: "Montserrat";
-  font-style: normal;
-  width: 1440px;
-  height: 1853px;
-  margin: 0 auto ;
+.list {
+  list-style: none;
+  padding:0;
+  margin:0; 
 }
 
 
@@ -39,10 +30,29 @@ body {
   visibility: hidden;
 }
 
+
 .elements {
-  margin-top: 163px;
+  margin: 140px 163px;
   display:flex;
   flex-direction: column;
-  
+}
+
+@import "components/_variables.scss";
+@import "components/_mixins";
+@import "components/text_field/text_field";
+@import "components/text_field_dropdown/text_field_dropdown";
+@import "components/checkbox_list/checkbox_list";
+@import "components/room_details/room_details";
+@import "components/checkbox_buttons/checkbox_buttons";
+@import "components/radio_buttons/radio_buttons";
+@import "components/toggle_button/toggle_button";
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  width: 1440px;
+  height: 1853px;
+  margin: 0 auto ;
 }
 

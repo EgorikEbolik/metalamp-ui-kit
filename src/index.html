@@ -17,7 +17,7 @@
         <div class="field__area dropdown-area">
           <div class="dropdown-area__text">Some Text</div>
           <div class="check"></div>
-          <ul class="dropdown-area__list">
+          <ul class="list dropdown-area__list">
                   <li class="dropdown-area__list__item">спальни
                     <div class="dropdown-area__list__item__counter">
                       <div class="dropdown-area__list__item__counter__plus-button"></div>
@@ -45,7 +45,7 @@
       <div class="field dropdown p-rel">
         <div class="field__title dropdown__title">checkbox list</div>
         <div class="check only-title__check only-title__check__transform"></div>
-        <ul class="dropdown-area__list dropdown-area__checkbox-list dropdown-area__checkbox-list__transform">
+        <ul class="list dropdown-area__list dropdown-area__checkbox-list dropdown-area__checkbox-list__transform">
                 <li class="dropdown-area__checkbox-list__item">
                   <div class="dropdown-area__checkbox-list__item__before">
                     <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
@@ -77,6 +77,54 @@
                   </div><span class="dropdown-area__checkbox-list__item__name">Шампунь</span>
                 </li>
         </ul>
+      </div>
+      <div class="room-details">
+        <ul class="list room-details__list">
+                <li class="room-details__list__item"><img src="./img/smile.svg" alt="smile" width="48" height="48">
+                  <div class="room-details__list__item__text"><span class="room-details__list__item__text__title">Комфорт</span>
+                    <p class="room-details__list__item__text__description">Шумопоглощающие стены</p>
+                  </div>
+                </li>
+                <li class="room-details__list__item"><img src="./img/convenience.svg" alt="convenience" width="48" height="48">
+                  <div class="room-details__list__item__text"><span class="room-details__list__item__text__title">Удобство</span>
+                    <p class="room-details__list__item__text__description">Окно в каждой из спален</p>
+                  </div>
+                </li>
+        </ul>
+      </div>
+      <div class="checkbox-buttons">
+        <div class="field__title">Checkbox Buttons</div>
+        <div class="list dropdown-area__checkbox-list">
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Можно курить</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Можно с питомцами</span>
+                </li>
+                <li class="dropdown-area__checkbox-list__item">
+                  <div class="dropdown-area__checkbox-list__item__before">
+                    <input class="dropdown-area__checkbox-list__item__checkbox" type="checkbox">
+                  </div><span class="dropdown-area__checkbox-list__item__name">Можно пригласить гостей (до 10 человек)</span>
+                </li>
+        </div>
+      </div>
+      <div class="radio-buttons"> 
+        <div class="field__title">Выберите свой пол</div>
+        <div>
+          <div class="radio-buttons__button">
+            <input type="radio" name="gender" value="Мужчина"><span>Мужчина </span>
+          </div>
+          <div class="radio-buttons__button">
+            <input type="radio" name="gender" value="Женщина"><span>Женщина</span>
+          </div>
+        </div>
+      </div>
+      <div class="toggle-button"> 
+        <input type="checkbox"><span>Получать спецпредложения</span>
       </div>
       <script src="components/text_field_dropdown/show_dropdown.js"></script>
       <script src="components/checkbox_list/checkbox_list.js"></script>

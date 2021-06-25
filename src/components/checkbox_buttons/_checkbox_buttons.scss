@@ -1,0 +1,22 @@
+.checkbox-buttons {
+  width: 222px;
+  height: auto;
+  margin: 20px 0;
+
+  .dropdown-area__checkbox-list {
+    opacity: 1;
+
+    &__item {
+      display: flex;
+      height: auto;
+
+      &:first-child {
+        height: 21px;
+      }
+
+      &__before {
+        height: 21px;
+      }
+    }
+  }
+}

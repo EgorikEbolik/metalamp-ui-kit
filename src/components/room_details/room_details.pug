@@ -1,0 +1,11 @@
+mixin room-details__list__item(img, alt, title, description)
+  li.room-details__list__item
+      img(src= img alt= alt width="48" height="48")
+      .room-details__list__item__text
+        span.room-details__list__item__text__title= title
+        p.room-details__list__item__text__description= description
+
+.room-details
+  ul.list.room-details__list
+    +room-details__list__item("./img/smile.svg", "smile", "Комфорт", "Шумопоглощающие стены")
+    +room-details__list__item("./img/convenience.svg", "convenience", "Удобство", "Окно в каждой из спален")

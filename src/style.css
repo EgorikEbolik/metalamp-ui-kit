@@ -15,6 +15,31 @@
   font-style: normal;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.v-hidden {
+  visibility: hidden;
+}
+
+.elements {
+  margin: 140px 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .field {
   width: 320px;
   height: 67px;
@@ -108,10 +133,8 @@
 }
 
 .dropdown-area__list {
-  list-style: none;
   padding: 15px 15px;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
-  margin: 0;
   -webkit-transition: border-color .3s ease;
   transition: border-color .3s ease;
 }
@@ -311,7 +334,7 @@
   width: 6px;
   height: 8px;
   top: 35%;
-  left: 40%;
+  left: 35%;
 }
 
 .dropdown-area__checkbox-list__item div {
@@ -325,13 +348,255 @@
   background-color: transparent;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  padding: 9px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-area__checkbox-list__item__checkbox:checked {
   border: 1px solid #BC9CFF;
+}
+
+.room-details {
+  width: 291px;
+}
+
+.room-details__list {
+  height: auto;
+}
+
+.room-details__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.room-details__list__item img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.room-details__list__item__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.room-details__list__item__text__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2041;
+  text-transform: capitalize;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.room-details__list__item__text__description {
+  margin: 0;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 16px;
+}
+
+.checkbox-buttons {
+  width: 222px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.checkbox-buttons .dropdown-area__checkbox-list {
+  opacity: 1;
+}
+
+.checkbox-buttons .dropdown-area__checkbox-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.checkbox-buttons .dropdown-area__checkbox-list__item:first-child {
+  height: 21px;
+}
+
+.checkbox-buttons .dropdown-area__checkbox-list__item__before {
+  height: 21px;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.radio-buttons {
+  width: 221px;
+}
+
+.radio-buttons .field__title {
+  margin-bottom: 16px;
+}
+
+.radio-buttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio-buttons div .radio-buttons__button:hover > span {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.radio-buttons div .radio-buttons__button span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.radio-buttons div .radio-buttons__button input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-buttons div .radio-buttons__button input:checked {
+  border-color: #BC9CFF;
+}
+
+.radio-buttons div .radio-buttons__button input:checked + span {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.radio-buttons div .radio-buttons__button input:checked::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: scale .5s 1;
+          animation: scale .5s 1;
+}
+
+.radio-buttons div .radio-buttons__button:last-child {
+  margin-left: 20px;
+}
+
+.toggle-button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toggle-button span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 10px;
+}
+
+.toggle-button input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  margin: 0;
+}
+
+.toggle-button input::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+  top: 0;
+  left: 4px;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.toggle-button input:checked {
+  border-color: #BC9CFF;
+}
+
+.toggle-button input:checked::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-transform: translate(calc(100% + 6px));
+          transform: translate(calc(100% + 6px));
 }
 
 body {
@@ -341,23 +606,4 @@ body {
   width: 1440px;
   height: 1853px;
   margin: 0 auto;
-}
-
-.d-none {
-  display: none;
-}
-
-.v-hidden {
-  visibility: hidden;
-}
-
-.elements {
-  margin-top: 163px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }

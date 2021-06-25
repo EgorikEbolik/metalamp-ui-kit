@@ -1,0 +1,37 @@
+.room-details {
+  width: 291px;
+  &__list {
+    height: auto;
+    &__item{
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid $Dark10;
+
+      & img {
+        align-self: flex-start;
+      }
+
+      &__text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        vertical-align: middle;
+
+        &__title {
+          @include h2;
+          text-transform: capitalize;
+          color: $Dark75;
+        }
+
+        &__description {
+          margin: 0;
+          margin-top: 5px;
+          @include body-text;
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
+}
