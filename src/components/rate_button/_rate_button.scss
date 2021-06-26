@@ -1,0 +1,11 @@
+.room-rating {
+  display: flex;
+
+  &__star {
+    margin-left: 4px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

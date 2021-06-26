@@ -45,8 +45,6 @@
           }
 
           &::before {
-            
-
             content: "";
             position: absolute;
             width: 12px;
@@ -59,17 +57,10 @@
             right: 0;
             margin: auto;
             animation: scale .5s 1;
-
-
-
-
-
           }
 
         }
       }
-
-
       &:last-child {
         margin-left: 20px;
       }

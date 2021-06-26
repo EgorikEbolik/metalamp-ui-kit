@@ -42,6 +42,36 @@
           </ul>
         </div>
       </div>
+      <div class="field dropdown">
+        <div class="field__title">some dropdown</div>
+        <div class="field__area dropdown-area">
+          <div class="dropdown-area__text">Some Text</div>
+          <div class="check"></div>
+          <ul class="list dropdown-area__list">
+                  <li class="dropdown-area__list__item">спальни
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">2</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+                  <li class="dropdown-area__list__item">кровати
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">2</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+                  <li class="dropdown-area__list__item">ванные комнаты
+                    <div class="dropdown-area__list__item__counter">
+                      <div class="dropdown-area__list__item__counter__plus-button"></div>
+                      <div class="dropdown-area__list__item__counter__value">1</div>
+                      <div class="dropdown-area__list__item__counter__minus-button"></div>
+                    </div>
+                  </li>
+          </ul>
+        </div>
+      </div>
       <div class="field dropdown p-rel">
         <div class="field__title dropdown__title">checkbox list</div>
         <div class="check only-title__check only-title__check__transform"></div>
@@ -126,8 +156,12 @@
       <div class="toggle-button"> 
         <input type="checkbox"><span>Получать спецпредложения</span>
       </div>
+      <button class="like-button"><img class="like-button__like-icon" src="/src/img/unliked.svg"><span class="like-button__likes-value">12</span></button>
+      <div class="room-rating"> <img class="room-rating__star" alt="star" width="24" height="24"><img class="room-rating__star" alt="star" width="24" height="24"><img class="room-rating__star" alt="star" width="24" height="24"><img class="room-rating__star" alt="star" width="24" height="24"><img class="room-rating__star" alt="star" width="24" height="24"></div>
       <script src="components/text_field_dropdown/show_dropdown.js"></script>
       <script src="components/checkbox_list/checkbox_list.js"></script>
+      <script src="components/like_button/like-button.js"></script>
+      <script src="components/rate_button/rate_button.js"></script>
     </div>
   </body>
 </html>

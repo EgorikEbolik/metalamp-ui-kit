@@ -1,6 +1,7 @@
 .toggle-button {
   margin-top: 20px;
   display: flex;
+  width: 260px;
 
   span {
     @include body-text;

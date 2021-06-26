@@ -1,0 +1,35 @@
+
+.like-button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid $Dark25;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__like-icon {
+    position: absolute;
+    left:50%;
+    transform: translate(-150%);
+  }
+
+  &__likes-value {
+    @include body-text;
+    font-size: 10px;
+    line-height: 12px;
+    color: $Dark25;
+    margin-left: 12px;
+  }
+}
+
+.liked {
+  border-color: $purple;
+
+  .like-button__likes-value {
+    color: $purple
+  }
+}
+
